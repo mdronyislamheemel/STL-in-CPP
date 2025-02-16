@@ -35,12 +35,19 @@ int main(){
     vec.erase(vec.begin());
     // erase at a particular index
     vec.erase(vec.begin() + 2);
+
+    /*vector.begin() vector er surur index take point korleu vector.end() vector er 
+    last index er porer khali index take nirdesh kore. r vector.begin k dereference korle 
+    oi index er value paua jai jamon*/
+    
     for(int val :vec){
         cout << val << " ";
     }
     cout << endl;
     cout << vec.size()<< endl;
     cout << vec.capacity()<< endl;
+
+    cout << "vec.begin: " << *(vec.begin()) << " & vec.end: " << *(vec.end());
     return 0;
     
 }

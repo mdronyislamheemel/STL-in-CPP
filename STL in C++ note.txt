@@ -1,0 +1,64 @@
+stl: standard template Library
+
+contains:
+1. containers
+2. Iterators
+3. Algorithms
+4. Functions 
+
+#vector:
+This is a dynamic array or resizable array
+vector er jonno prothome #include <vector> headerfile add korte hoi
+and it's syntax is:
+vector<variable_type> vactor_name;
+
+Akhane vector_name = vec dhora hoyeche
+
+#size and capacity:
+
+Initially vector size is remain 0;
+We can check it with this command, vec.size();
+But vector size and capacity are not same. Vector size hocche vectorer moddhe element er number. Kintu amra jokhon vector push_back kori tokhon capacity 2 er multiple akare barte thake. Jamon, jodi 2 ta element vector e thake abong aro 1 ta element add korte chai tokhon add korle size hobe 3 but capacity double houai capacity hobe 4.
+
+
+##push_back and pop_back
+Era duitai last index e element push and pop korte use hoi
+
+push_back er e altarnative hisebe emplace_back use kora hoi duitai last e data insert korte use kora hoi. Tobe samanno kichu difference ache seta pore janbo 
+
+
+##vec.at(index) or vec[index]
+use kora hoi vector er kono particular index k access korte
+
+
+--If  we want to access first or last element then we have to use 
+vec.front() and vec.back()
+
+uporer sobgula function O(1) time complexity te kaj kore
+
+abar aro kichu notun notun function amra dekhbpo:
+
+erase
+insert
+clear
+empty
+
+vec.erase(vec.begin()) tahole surur element ta delete hoye jabe
+abar kono particular index delete korte hole
+vect.erase(vec.begin()+ index number)
+
+# Abar duibar totodhik delete korte chaile 
+vector_name.erase(start_index, end-index) korte hobe
+
+
+# vector clear
+vec.clear();
+korle puro vector akdom delete hoye jabe
+
+#vector insert :
+vec.insert(index, value) dite hobe jamon
+vec.insert((vec.begin() + 2) , 100) dile 3 no. index e 100 add hoye jabe
+
+
+#iterator and reverse_itaerator
+
