@@ -36,7 +36,7 @@ vec.front() and vec.back()
 
 uporer sobgula function O(1) time complexity te kaj kore
 
-abar aro kichu notun notun function amra dekhbpo:
+abar aro kichu notun notun function amra dekhbo:
 
 erase
 insert
