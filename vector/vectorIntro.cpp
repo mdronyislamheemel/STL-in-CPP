@@ -3,7 +3,26 @@
 using namespace std;
 int main()
 {
+    
+    //vector initialization
     vector<int> v;
+    // another way
+    vector<int> a(5,1);
+    cout<<"vector a:"<< endl;
+    for(int i : a){
+        cout<< i << " ";
+    }
+    cout<< endl;
+
+    // copy of a vector
+    vector<int> copy(a);
+    cout<< "Copy vector: "<< endl;
+    for(int i : copy){
+        cout<< i << " ";
+    }
+    cout<< endl;
+
+
     cout<< "Vector capacity -> "<< v.capacity()<< endl;
 
     v.push_back(1);
@@ -26,7 +45,7 @@ int main()
         cout<< i <<" ";
     }
     cout<< endl;
-    
+
     //delete a element from the back
     v.pop_back();
 
@@ -35,5 +54,12 @@ int main()
         cout<< i <<" ";
     }
     cout<< endl;
+
+    /*v.clear dara puro vector clear kora jai. tobe akhane vector khali houai vector
+    size zero holeu vector capacity same thake karon jei poriman memory initialize 
+    kora hoyeche ta thekei jabe*/
+    cout<< "Before vector clear: "<< v.size() << " " <<v.capacity()<< endl;
+    v.clear();
+    cout<< "After vector clear: "<< v.size()<< " " << v.capacity() <<endl;
     return 0;
 }
